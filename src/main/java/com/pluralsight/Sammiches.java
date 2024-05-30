@@ -1,18 +1,20 @@
 package com.pluralsight;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Sammiches {
+    private final List<Toppings> toppings = List.of();
     private String breadType;
     private String size;
     List<Toppings> toppingsList;
     private boolean isToasted;
 
-    public Sammiches(String breadType, String size, boolean isToasted, List<Toppings> toppingsList) {
+    public Sammiches(String breadType, String size, boolean isToasted) {
         this.breadType = breadType;
         this.size = size;
         this.isToasted = isToasted;
-        this.toppingsList = toppingsList;
+        this.toppings = toppings;
     }
 
     public String getBreadType() {
